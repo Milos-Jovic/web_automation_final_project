@@ -76,11 +76,11 @@ public class LoginTests extends BasicTest {
         navPage.waitUntilCurrentUrlContainsHome();
 
     }
-//    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
-//    public void Logout() {
-//
-//        navPage.waitUntilLogoutButtonIsVisible();
-//        navPage.clickOnLogoutButton();
-//
-//    }
-//}
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
+    public void Logout() {
+
+        navPage.waitUntilLogoutButtonIsVisible();
+        navPage.clickOnLogoutButton();
+
+    }
+}
