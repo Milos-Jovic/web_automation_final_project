@@ -54,7 +54,7 @@ public class SignUpTests extends BasicTest {
 
     }
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-    public void SuccessfulSignup () {
+    public void Signup () {
 
         String name = "Milos Jovic";
         String email = "milos@gmail.com";
