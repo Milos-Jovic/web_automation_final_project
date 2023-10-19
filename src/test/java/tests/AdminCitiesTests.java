@@ -36,24 +36,24 @@ public class AdminCitiesTests extends BasicTest {
         Assert.assertEquals(citiesPage.getNameInputFieldValueForAttributeType(), "text",
                 "Name input field should have value 'text'");
     }
-//    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
-//    public void CreateNewCity() {
-//
-//        String cityName = "New City";
-//
-//        navPage.clickOnAdminButton();
-//        navPage.waitUntilAdminListIsVisible();
-//        navPage.clickOnAdminCitiesFromAdminLIst();
-//        navPage.waitUntilCurrentUrlContainsAdminCities();
-//        citiesPage.clickOnNewItemButton();
-//        citiesPage.waitUntilPopUpMessageForAddOrEditCityIsVisible();
-//        citiesPage.fillInNameInputField(cityName);
-//        citiesPage.clickOnSaveButton();
-//        messagePopUpPage.waitUntilPopUpMessageForSuccessfulAddOrEditCityIsVisible();
-//        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulAddOrEditCity(),
-//                "Message should contain text 'Saved successfully'.");
-//
-//    }
+    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+    public void CreateNewCity() {
+
+        String cityName = "New City";
+
+        navPage.clickOnAdminButton();
+        navPage.waitUntilAdminListIsVisible();
+        navPage.clickOnAdminCitiesFromAdminLIst();
+        navPage.waitUntilCurrentUrlContainsAdminCities();
+        citiesPage.clickOnNewItemButton();
+        citiesPage.waitUntilPopUpMessageForAddOrEditCityIsVisible();
+        citiesPage.fillInNameInputField(cityName);
+        citiesPage.clickOnSaveButton();
+        messagePopUpPage.waitUntilPopUpMessageForSuccessfulAddOrEditCityIsVisible();
+        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulAddOrEditCity(),
+                "Message should contain text 'Saved successfully'.");
+
+    }
 //    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
 //    public void EditCity() {
 //
