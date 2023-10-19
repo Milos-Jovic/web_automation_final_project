@@ -63,7 +63,7 @@ public class LoginTests extends BasicTest {
 
     }
     @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
-    public void SuccessfulLogin() {
+    public void Login() {
 
         String email = "admin@admin.com";
         String password = "12345";
