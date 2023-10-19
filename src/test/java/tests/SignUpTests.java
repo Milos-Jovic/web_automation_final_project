@@ -53,29 +53,29 @@ public class SignUpTests extends BasicTest {
                 "Current url should be " + baseUrl + "/signup");
 
     }
-//    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-//    public void SuccessfulSignup () {
-//
-//        String name = "Milos Jovic";
-//        String email = "milos@gmail.com";
-//        String password = "12345";
-//        String confirmPassword = "12345";
-//
-//        navPage.clickOnSignUpButton();
-//        navPage.waitUntilCurrentUrlContainsSignUp();
-//        signUpPage.fillInNameInputField(name);
-//        signUpPage.fillInEmailInputField(email);
-//        signUpPage.fillInPasswordInputField(password);
-//        signUpPage.fillInConfirmPasswordInputField(confirmPassword);
-//        signUpPage.clickOnSignUpButton();
-//        navPage.waitUntilCurrentUrlContainsHome();
-//        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/home",
-//                "Current url should be " + baseUrl + "/home");
-//        messagePopUpPage.waitUntilPopUpMessageForAccountVerifyIsVisible();
-//        Assert.assertEquals(messagePopUpPage.getTextFromPopUpMessageForAccountVerify(), "IMPORTANT: Verify your account",
-//                "Error message should be 'IMPORTANT: Verify your account'.");
-//        messagePopUpPage.clickOnCloseButton();
-//        navPage.clickOnLogoutButton();
-//
-//    }
-//}
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void SuccessfulSignup () {
+
+        String name = "Milos Jovic";
+        String email = "milos@gmail.com";
+        String password = "12345";
+        String confirmPassword = "12345";
+
+        navPage.clickOnSignUpButton();
+        navPage.waitUntilCurrentUrlContainsSignUp();
+        signUpPage.fillInNameInputField(name);
+        signUpPage.fillInEmailInputField(email);
+        signUpPage.fillInPasswordInputField(password);
+        signUpPage.fillInConfirmPasswordInputField(confirmPassword);
+        signUpPage.clickOnSignUpButton();
+        navPage.waitUntilCurrentUrlContainsHome();
+        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/home",
+                "Current url should be " + baseUrl + "/home");
+        messagePopUpPage.waitUntilPopUpMessageForAccountVerifyIsVisible();
+        Assert.assertEquals(messagePopUpPage.getTextFromPopUpMessageForAccountVerify(), "IMPORTANT: Verify your account",
+                "Error message should be 'IMPORTANT: Verify your account'.");
+        messagePopUpPage.clickOnCloseButton();
+        navPage.clickOnLogoutButton();
+
+    }
+}
