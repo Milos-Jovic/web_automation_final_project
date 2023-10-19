@@ -38,17 +38,17 @@ public class LocaleTests extends BasicTest {
                 "Text in header should be '首页'.");
     }
 
-//    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-//    public void setLocaleToFR() {
-//
-//        navPage.clickOnLanguageMenuButton();
-//        navPage.waitUntilLanguageListIsVisible();
-//        navPage.clickOnFrenchLanguageInMenuList();
-//        Assert.assertEquals(navPage.getHeaderText(), "Page d'atterrissage",
-//                "Text in header should be 'Page d'atterrissage'.");
-//
-//    }
-//
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void setLocaleToFR() {
+
+        navPage.clickOnLanguageMenuButton();
+        navPage.waitUntilLanguageListIsVisible();
+        navPage.clickOnFrenchLanguageInMenuList();
+        Assert.assertEquals(navPage.getHeaderText(), "Page d'atterrissage",
+                "Text in header should be 'Page d'atterrissage'.");
+
+    }
+
 //    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
 //    public void setLocaleToUA() {
 //
