@@ -89,24 +89,24 @@ public class AdminCitiesTests extends BasicTest {
                 "This row should contain " + newCityName);
 
     }
-//    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
-//    public void DeleteCity() {
-//
-//        String newCityName = "City Edited";
-//        navPage.clickOnAdminButton();
-//        navPage.waitUntilAdminListIsVisible();
-//        navPage.clickOnAdminCitiesFromAdminLIst();
-//        navPage.waitUntilCurrentUrlContainsAdminCities();
-//        citiesPage.fillInSearchInputField(newCityName);
-//        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
-//        Assert.assertEquals(citiesPage.getTextFromCertainCellFromCertainRow(1, 2), newCityName,
-//                "Name cell from first row should contain " + newCityName);
-//        citiesPage.clickOnDeleteButtonFromRow(1);
-//        citiesPage.waitUntilPopUpMessageForDeleteCityIsVisible();
-//        citiesPage.clickOnDeleteButtonFromPopUpMenuForDeleteCity();
-//        messagePopUpPage.waitUntilPopUpMessageForSuccessfulDeleteCityIsVisible();
-//        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulDeleteCity(),
-//                "Message should contain text 'Deleted successfully'.");
-//
-//    }
-//}
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
+    public void DeleteCity() {
+
+        String newCityName = "City Edited";
+        navPage.clickOnAdminButton();
+        navPage.waitUntilAdminListIsVisible();
+        navPage.clickOnAdminCitiesFromAdminLIst();
+        navPage.waitUntilCurrentUrlContainsAdminCities();
+        citiesPage.fillInSearchInputField(newCityName);
+        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
+        Assert.assertEquals(citiesPage.getTextFromCertainCellFromCertainRow(1, 2), newCityName,
+                "Name cell from first row should contain " + newCityName);
+        citiesPage.clickOnDeleteButtonFromRow(1);
+        citiesPage.waitUntilPopUpMessageForDeleteCityIsVisible();
+        citiesPage.clickOnDeleteButtonFromPopUpMenuForDeleteCity();
+        messagePopUpPage.waitUntilPopUpMessageForSuccessfulDeleteCityIsVisible();
+        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulDeleteCity(),
+                "Message should contain text 'Deleted successfully'.");
+
+    }
+}
