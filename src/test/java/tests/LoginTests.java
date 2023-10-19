@@ -45,23 +45,23 @@ public class LoginTests extends BasicTest {
                 "Current url should be " + baseUrl + "/login");
 
     }
-//    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-//    public void DisplaysErrorWhenPasswordIsWrong() {
-//
-//        String email = "admin@admin.com";
-//        String password = "password123";
-//
-//        navPage.clickOnLoginButton();
-//        loginPage.fillInEmailInputField(email);
-//        loginPage.fillInPasswordInputField(password);
-//        loginPage.clickOnLoginButton();
-//        messagePopUpPage.waitUntilPopUpMessageForInvalidLoginIsVisible();
-//        Assert.assertEquals(messagePopUpPage.getTextFromPopUpMessageForInvalidLogin(), "Wrong password",
-//                "Error message should be 'Wrong password'.");
-//        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/login",
-//                "Current url should be " + baseUrl + "/login");
-//
-//    }
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void DisplaysErrorWhenPasswordIsWrong() {
+
+        String email = "admin@admin.com";
+        String password = "password123";
+
+        navPage.clickOnLoginButton();
+        loginPage.fillInEmailInputField(email);
+        loginPage.fillInPasswordInputField(password);
+        loginPage.clickOnLoginButton();
+        messagePopUpPage.waitUntilPopUpMessageForInvalidLoginIsVisible();
+        Assert.assertEquals(messagePopUpPage.getTextFromPopUpMessageForInvalidLogin(), "Wrong password",
+                "Error message should be 'Wrong password'.");
+        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/login",
+                "Current url should be " + baseUrl + "/login");
+
+    }
 //    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
 //    public void SuccessfulLogin() {
 //
