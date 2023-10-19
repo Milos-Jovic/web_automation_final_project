@@ -15,14 +15,14 @@ public class AuthRoutesTests extends BasicTest {
 
     }
 
-//    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
-//    public void ForbidsVisitsToProfileUrlIfNotAuthenticated() {
-//
-//        driver.navigate().to(baseUrl + "/profile");
-//        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/login",
-//                "Current url should be " + baseUrl + "/login");
-//    }
-//
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+    public void ForbidsVisitsToProfileUrlIfNotAuthenticated() {
+
+        driver.navigate().to(baseUrl + "/profile");
+        Assert.assertEquals(navPage.getCurrentUrl(), baseUrl + "/login",
+                "Current url should be " + baseUrl + "/login");
+    }
+
 //    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 //    public void ForbidsVisitsToAdminCitiesUrlIfNotAuthenticated() {
 //
