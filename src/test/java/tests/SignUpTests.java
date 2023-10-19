@@ -14,23 +14,23 @@ public class SignUpTests extends BasicTest {
                 "Current url should be " + baseUrl + "/signup");
 
     }
-//
-//    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
-//    public void ChecksInputTypes() {
-//
-//        navPage.clickOnSignUpButton();
-//        navPage.waitUntilCurrentUrlContainsSignUp();
-//        Assert.assertEquals(signUpPage.getNameInputFieldValueForAttributeType(), "text",
-//                "Name input field should have value 'text' for its type");
-//        Assert.assertEquals(signUpPage.getEmailInputFieldValueForAttributeType(), "email",
-//                "Email input field should have value 'email' for its type");
-//        Assert.assertEquals(signUpPage.getPasswordInputFieldValueForAttributeType(), "password",
-//                "Password input field should have value 'password' for its type");
-//        Assert.assertEquals(signUpPage.getConfirmPasswordInputFieldValueForAttributeType(), "password",
-//                "Confirm password input field should have value 'password' for its type");
-//
-//    }
-//
+
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+    public void ChecksInputTypes() {
+
+        navPage.clickOnSignUpButton();
+        navPage.waitUntilCurrentUrlContainsSignUp();
+        Assert.assertEquals(signUpPage.getNameInputFieldValueForAttributeType(), "text",
+                "Name input field should have value 'text' for its type");
+        Assert.assertEquals(signUpPage.getEmailInputFieldValueForAttributeType(), "email",
+                "Email input field should have value 'email' for its type");
+        Assert.assertEquals(signUpPage.getPasswordInputFieldValueForAttributeType(), "password",
+                "Password input field should have value 'password' for its type");
+        Assert.assertEquals(signUpPage.getConfirmPasswordInputFieldValueForAttributeType(), "password",
+                "Confirm password input field should have value 'password' for its type");
+
+    }
+
 //    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 //    public void DisplaysErrorWhenUserAlreadyExists() {
 //
