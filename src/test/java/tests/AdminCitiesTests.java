@@ -75,20 +75,20 @@ public class AdminCitiesTests extends BasicTest {
                 "Message should contain text 'Saved successfully'.");
 
     }
-//    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
-//    public void SearchCity() {
-//
-//        String newCityName = "City Edited";
-//        navPage.clickOnAdminButton();
-//        navPage.waitUntilAdminListIsVisible();
-//        navPage.clickOnAdminCitiesFromAdminLIst();
-//        navPage.waitUntilCurrentUrlContainsAdminCities();
-//        citiesPage.fillInSearchInputField(newCityName);
-//        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
-//        Assert.assertEquals(citiesPage.getTextFromCertainCellFromCertainRow(1, 2), newCityName,
-//                "This row should contain " + newCityName);
-//
-//    }
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void SearchCity() {
+
+        String newCityName = "City Edited";
+        navPage.clickOnAdminButton();
+        navPage.waitUntilAdminListIsVisible();
+        navPage.clickOnAdminCitiesFromAdminLIst();
+        navPage.waitUntilCurrentUrlContainsAdminCities();
+        citiesPage.fillInSearchInputField(newCityName);
+        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
+        Assert.assertEquals(citiesPage.getTextFromCertainCellFromCertainRow(1, 2), newCityName,
+                "This row should contain " + newCityName);
+
+    }
 //    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
 //    public void DeleteCity() {
 //
