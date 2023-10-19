@@ -7,7 +7,7 @@ import retry.RetryAnalyzer;
 public class AdminCitiesTests extends BasicTest {
 
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
-    public void VisitsTheAdminCitiesPage() {
+    public void visitsTheAdminCitiesPageAndListCities() {
 
         String email = "admin@admin.com";
         String password = "12345";
