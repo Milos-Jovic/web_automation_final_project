@@ -54,27 +54,27 @@ public class AdminCitiesTests extends BasicTest {
                 "Message should contain text 'Saved successfully'.");
 
     }
-//    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
-//    public void EditCity() {
-//
-//        String oldCityName = "Old city";
-//        String newCityName = "City Edited";
-//
-//        navPage.clickOnAdminButton();
-//        navPage.waitUntilAdminListIsVisible();
-//        navPage.clickOnAdminCitiesFromAdminLIst();
-//        navPage.waitUntilCurrentUrlContainsAdminCities();
-//        citiesPage.fillInSearchInputField(oldCityName);
-//        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
-//        citiesPage.clickOnEditButtonFromRow(1);
-//        citiesPage.waitUntilPopUpMessageForAddOrEditCityIsVisible();
-//        citiesPage.fillInNameInputField(newCityName);
-//        citiesPage.clickOnSaveButton();
-//        messagePopUpPage.waitUntilPopUpMessageForSuccessfulAddOrEditCityIsVisible();
-//        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulAddOrEditCity(),
-//                "Message should contain text 'Saved successfully'.");
-//
-//    }
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void EditCity() {
+
+        String oldCityName = "Old city";
+        String newCityName = "City Edited";
+
+        navPage.clickOnAdminButton();
+        navPage.waitUntilAdminListIsVisible();
+        navPage.clickOnAdminCitiesFromAdminLIst();
+        navPage.waitUntilCurrentUrlContainsAdminCities();
+        citiesPage.fillInSearchInputField(oldCityName);
+        citiesPage.waitUntilNumberOfRowsOfCitiesInSearchIs(1);
+        citiesPage.clickOnEditButtonFromRow(1);
+        citiesPage.waitUntilPopUpMessageForAddOrEditCityIsVisible();
+        citiesPage.fillInNameInputField(newCityName);
+        citiesPage.clickOnSaveButton();
+        messagePopUpPage.waitUntilPopUpMessageForSuccessfulAddOrEditCityIsVisible();
+        Assert.assertTrue(messagePopUpPage.getTextFromPopUpMessageForSuccessfulAddOrEditCity(),
+                "Message should contain text 'Saved successfully'.");
+
+    }
 //    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
 //    public void SearchCity() {
 //
