@@ -17,17 +17,17 @@ public class LocaleTests extends BasicTest {
 
     }
 
-//    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
-//    public void setLocaleToEN() {
-//
-//        navPage.clickOnLanguageMenuButton();
-//        navPage.waitUntilLanguageListIsVisible();
-//        navPage.clickOnEnglishLanguageInMenuList();
-//        Assert.assertEquals(navPage.getHeaderText(), "Landing",
-//                "Text in header should be 'Landing'.");
-//
-//    }
-//
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+    public void setLocaleToEN() {
+
+        navPage.clickOnLanguageMenuButton();
+        navPage.waitUntilLanguageListIsVisible();
+        navPage.clickOnEnglishLanguageInMenuList();
+        Assert.assertEquals(navPage.getHeaderText(), "Landing",
+                "Text in header should be 'Landing'.");
+
+    }
+
 //    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 //    public void setLocaleToCN() {
 //
