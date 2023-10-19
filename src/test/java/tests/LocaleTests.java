@@ -49,14 +49,14 @@ public class LocaleTests extends BasicTest {
 
     }
 
-//    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
-//    public void setLocaleToUA() {
-//
-//        navPage.clickOnLanguageMenuButton();
-//        navPage.waitUntilLanguageListIsVisible();
-//        navPage.clickOnUkraineLanguageInMenuList();
-//        Assert.assertEquals(navPage.getHeaderText(), "Лендінг",
-//                "Text in header should be 'Лендінг'.");
-//
-//    }
-//}
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void setLocaleToUA() {
+
+        navPage.clickOnLanguageMenuButton();
+        navPage.waitUntilLanguageListIsVisible();
+        navPage.clickOnUkraineLanguageInMenuList();
+        Assert.assertEquals(navPage.getHeaderText(), "Лендінг",
+                "Text in header should be 'Лендінг'.");
+
+    }
+}
