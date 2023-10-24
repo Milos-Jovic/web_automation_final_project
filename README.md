@@ -1,6 +1,6 @@
 # web_automation_final_project
 
-Final Web Automation Project: Demonstrating Proficiency in Software Application Testing with Selenium and TestNG Libraries
+Web Automation Final Project: Demonstrating Proficiency in Software Application Testing with Selenium and TestNG Libraries
 This project focuses on testing a web application named "My Awesome App" with the following technologies:
 
 * Java
