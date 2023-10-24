@@ -54,6 +54,3 @@ In addition to the main tests, this project incorporates a Helpers class, which 
 Retry Analyzer - Automatically retries failed tests, enhancing test reliability.
 
 Screenshot Generation - Automatically captures screenshots when a test case fails, aiding in debugging and error analysis.
-
-JavaScript Executor Interface - Utilized for executing JavaScript actions within the Selenium framework, expanding the scope of testing capabilities.
-This project showcases your skills in web automation and your ability to ensure the robustness and reliability of "My Awesome App."
