@@ -14,7 +14,6 @@ public class BasicPage {
         this.driver = driver;
         this.wait = wait;
     }
-
     public boolean elementExists (By by) {
         return !driver.findElements(by).isEmpty();
     }
