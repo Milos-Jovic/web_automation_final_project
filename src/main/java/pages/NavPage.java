@@ -23,7 +23,6 @@ public class NavPage extends BasicPage {
     public WebElement getLanguageList() {
         return driver.findElement(By.cssSelector(".menuable__content__active > div"));
     }
-
     public void waitUntilLanguageListIsVisible() {
         wait
                 .withMessage("List should be visible.")
